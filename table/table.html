@@ -2,21 +2,34 @@
 <html>
 <head>
 <style>
-    table, th, td {border: 1px solid black;
-    border-collapse: collapse
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family: arial;
     }
+
+th, td {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+tfoot {
+    text-align:center;
+}
+
 </style>
 <title>Create an HTML Table</title>
 </head>
 <body> 
 
-<table> 
+<table width="100%" style="font-family:arial"> 
     <tr>
-        <th>Grapes</th>
-        <th>Oranges</th>
-        <th>Apples</th>
-        <th>Kiwi</th>
-        <th>Blueberries</th>
+        <th width="20%">Grapes</th>
+        <th width="20%">Oranges</th>
+        <th width="20%">Apples</th>
+        <th width="20%">Kiwi</th>
+        <th width="20%">Blueberries</th>
     </tr>
     <tr>
         <td>1.50</td>
@@ -52,6 +65,146 @@
         <td>14</td>
         <td>2.5</td>
         <td>4.50</td>
+    </tr>
+</table>
+<br>
+<br>
+
+<table width="100%" style="font-family:arial;"> 
+<caption style="font-size:2em;">Avg GPA for Student 1</caption>
+    <thead>
+        <tr>
+            <th width="33%">Quarter</th>
+            <th width="33%">Semester</th>
+            <th width="33%">GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Q1</td>
+            <td>S1</td>
+            <td>3.85</td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>S1</td>
+            <td>4.00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Average</td>
+            <td>S1</td>
+            <td>3.925</td>
+        </tr>
+    </tfoot>
+</table>
+<br>
+<br>
+<table style="width:100%">
+<caption style="font-size: 2em;">Spanning of Rows and Columns</caption>
+    <tr>
+        <th colspan="3"></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="3"></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="4"></td>
+        <td></td>
+        <td rowspan="3"></td>
+        <td></td>
+        <td rowspan="4"></td>
+        <td></td>
+        <td rowspan="3"></td>
+        <td></td>
+        <td rowspan="4"></td>
+        <td></td>
+    </tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="3" colspan="3"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3" rowspan="3"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td rowspan="2" colspan="3"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br>
+<br>
+<table style="width:100%">
+    <caption style="font-size: 2em;">Tables in Tables</caption>
+    <tr>
+        <td width="50%">
+            <table style="width:100%">
+                <tr><td>A</td><td>B</td></tr>
+                <tr><td>C</td><td>D</td></tr>
+            </table>
+        </td>
+        <td width="50%">E</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>
+            <table style="width:100%">
+                <tr><td>G</td></tr>
+                <tr><td>H</td></tr>
+            </table>
+        </td>
     </tr>
 </table>
 
