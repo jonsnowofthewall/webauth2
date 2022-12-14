@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Positioning</title>
+<style>
+
+    img.image1 {
+        position: fixed;
+        top: 10;
+        right: 10;
+    }
+
+    img.image2 {
+        position: relative;
+        top: 20px; 
+        left: 20px
+    }
+
+    img.image3 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    img.blue {
+        position: static;
+    }
+
+    img.red {
+        position: relative;
+        top: 25px;
+        right: 75px;
+        z-index: 2;
+    }
+
+    img.green {
+        position: relative;
+        top: 50px;
+        right: 150px;
+        z-index: 3;
+    }
+
+    html {
+        cursor: context-menu;
+    }
+
+    img {
+        cursor: copy;
+    }
+
+</style>
+</head>
+<body>
+
+    <img class="image1" src="http://www.clker.com/cliparts/b/0/a/b/1429529866543067211yellowish-orange%20and%20pinkish%20red%20square%20wallpaper%20background-th.png">
+    <img class="image2" src="https://images.squarespace-cdn.com/content/v1/5afc5882f407b4f2aec78c5f/1530025564586-81VXIHOUKMX74DW4D0Y2/bluesquare.png?format=1500w">
+    <img class="image3" src="https://images.squarespace-cdn.com/content/v1/5ac65959b10598d1d61c3ba0/1525639553276-EYNXMV6O5XXCXOPFHCX2/green-square.jpg?format=1500w">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img class="blue" src="http://www.clker.com/cliparts/b/0/a/b/1429529866543067211yellowish-orange%20and%20pinkish%20red%20square%20wallpaper%20background-th.png">
+    <img class="red" src="https://images.squarespace-cdn.com/content/v1/5afc5882f407b4f2aec78c5f/1530025564586-81VXIHOUKMX74DW4D0Y2/bluesquare.png?format=1500w">
+    <img class="green" src="https://images.squarespace-cdn.com/content/v1/5ac65959b10598d1d61c3ba0/1525639553276-EYNXMV6O5XXCXOPFHCX2/green-square.jpg?format=1500w">
+
+</body>
+</html>
+
